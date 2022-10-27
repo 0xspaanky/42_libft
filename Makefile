@@ -18,6 +18,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
+$(OBJ): $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC)
+
 clean:
 	$(RM) $(OBJ) $(BOBJ)
 
@@ -25,6 +28,3 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $?

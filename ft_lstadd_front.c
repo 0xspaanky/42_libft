@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 03:15:46 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/25 04:57:47 by smounafi         ###   ########.fr       */
+/*   Created: 2022/10/27 18:50:01 by smounafi          #+#    #+#             */
+/*   Updated: 2022/10/27 18:50:08 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

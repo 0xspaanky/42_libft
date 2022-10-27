@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 02:25:09 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 21:28:04 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:09 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (ptr);
 }
-
-/*
-int main()
-{
-    printf("Mine : %s", ft_calloc(20, sizeof(char)));
-}*/

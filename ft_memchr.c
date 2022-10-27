@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 03:29:45 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 21:32:40 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:27 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int main()
-// {
-//     int p[] = {5,16777412,500,6};
-//     int *c = ft_memchr(p, 1, 10);
-//     int i =0;
-//     while (i < 2)
-//     {
-//         printf("%d\n",c[i]);
-//         i++;
-//     }
-// }

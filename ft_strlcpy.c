@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 19:05:31 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 22:14:41 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:58 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	else
 		return (ls);
 }
-
-/*int main()
-{
-    char t[] = "AAAA";
-    char y[] = "BBBB";
-    printf("%zu\n", ft_strlcpy(t, y , 2));
-    //printf("%s\n", t);
-    printf("%zu\n", strlcpy(t, y, 2));
-    //printf("%s", t);
-}*/

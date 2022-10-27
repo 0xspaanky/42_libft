@@ -30,15 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (ptr_dest);
 }
-
-/*
-int main()
-{
-    char src[] = "move this";
-    char dest[10] = "";
-
-    printf("Theirs : %s\n", memmove(dest, src, 9));
-    printf("dest : %s", dest);
-    printf("Mine : %s\n", ft_memmove(dest, src, 9));
-    printf("dest : %s", dest);
-}*/

@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/23 23:18:42 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/24 18:36:45 by smounafi         ###   ########.fr       */
+/*   Created: 2022/10/27 04:05:42 by smounafi          #+#    #+#             */
+/*   Updated: 2022/10/27 05:03:36 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(char const *s, char c)
+int	count_words(char const *s, char c)
 {
 	int	i;
-	int	count;
+	int	counter;
 
-	count = 0;
+	counter = 0;
 	i = 0;
 	while (s[i])
 	{
@@ -25,12 +25,12 @@ int	count(char const *s, char c)
 			i++;
 		else
 		{
-			count++;
+			counter++;
 			while (s[i] && s[i] != c)
 				i++;
 		}
 	}
-	return (count);
+	return (counter);
 }
 
 char	**free_things(char **strings)
@@ -49,17 +49,25 @@ char	**free_things(char **strings)
 	return (strings);
 }
 
+int	get_word_len(const char *s, char c)
+{
+	int	j;
+
+	j = 0;
+	while (s[j] && s[j] != c)
+		j++;
+	return (j);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	int		i;
 	int		j;
 	int		index;
 	char	**string;
 
 	j = 0;
-	i = 0;
 	index = 0;
-	string = (char **) malloc (sizeof (char *) * (count(s, c) + 1));
+	string = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!string)
 		return (NULL);
 	while (*s)
@@ -68,32 +76,12 @@ char	**ft_split(char const *s, char c)
 			s++;
 		else
 		{
-			j = 0;
-			while (s[j] && s[j] != c)
-				j++;
-			string[index++] = ft_substr(s, 0, j);
+			string[index++] = ft_substr(s, 0, get_word_len(s, c));
 			if (!string[index - 1])
 				return (free_things(string));
-			s += j;
+			s += get_word_len(s, c);
 		}
 	}
 	string[index] = NULL;
 	return (string);
 }
-
-//handdle 25 lines
-
-
-
-// int main()
-// {
-//     char str[] = "1137 #is#the best#aschool/for,all.time";
-//     char **s;
-//     int i=0;
-//     s = ft_split(str, '#');
-//     while(s[i])
-//     {
-//         printf("%s", s[i]);
-//         i++;
-//     }
-// }

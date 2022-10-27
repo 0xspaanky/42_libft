@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 22:24:15 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/18 00:28:17 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:29 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-    char src[] = "move this";
-    char dest[] = "move this";
-
-    printf("Theirs : %d\n", memcmp(src, dest, 0));
-    printf("Mine : %d\n", ft_memcmp(src, dest, 0));
-}
-*/

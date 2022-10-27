@@ -39,10 +39,3 @@ int	ft_atoi(const char *str)
 	}
 	return (op * sign);
 }
-
-// int main()
-// {
-// 	char *str = " +-5564846";
-//     printf("Atoi : %d", ft_atoi(str));
-//     printf("Mine : %s", ft_atoi(str);
-// }

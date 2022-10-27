@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 02:52:36 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/20 18:56:19 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:35 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,3 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 		ptr_dest = ft_memcpy(dest, src, n);
 	return (dest);
 }
-/*
-int main()
-{
-    char src[] = "abc";
-    char dst[5] = "";
-    printf("Mine : %s\n", ft_memmove(dst, src, 2));
-}
-*/

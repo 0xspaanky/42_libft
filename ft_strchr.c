@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 23:55:27 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 21:53:38 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:50 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-
-// int main()
-// {
-//     printf("Mine : %s\n", ft_strchr("tedste", 101));
-// }

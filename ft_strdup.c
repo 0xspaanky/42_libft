@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 02:47:26 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 22:07:48 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:53 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ char	*ft_strdup(const char *s1)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-// int main()
-// {
-//     char *s;
-//     s = ft_strdup("tedste");
-//     printf("Mine : %s\n", s);
-// }

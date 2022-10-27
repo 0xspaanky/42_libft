@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:51:13 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 21:49:17 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:37:38 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-//case to hunddle ; buffer overflow
-// int main()
-// {
-//     char src[] = "abcde";
-//    char *p = ft_memset(src, 'x', 3);
-//   printf("memset : %s\n", p);
-// }

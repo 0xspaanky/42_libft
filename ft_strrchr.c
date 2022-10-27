@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 01:54:34 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/16 22:44:17 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:38:06 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/*int main()
-{
-    char t[] = "AAAbcbDee";
-
-    printf("Theirs : %s\n", strrchr(t, 'b'));
-    printf("Mine : %s", ft_strrchr(t, 'b'));
-}*/

@@ -6,7 +6,7 @@
 /*   By: smounafi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:20:11 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/25 04:58:07 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/27 04:29:19 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,5 @@ char	**ft_split(char const *s, char c);
 void	ft_bzero(void *s, size_t n);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-int		ft_lstsize(t_list *lst);
+
 #endif

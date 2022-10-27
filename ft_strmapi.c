@@ -33,13 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	p[i] = '\0';
 	return (p);
 }
-// char f(unsigned int i, char c)
-// { 
-//     c = c + i;
-//     return (c);
-// }
-// int main()
-// {
-//     char (*p)(unsigned int , char ) = &f;
-//     printf("%s", ft_strmapi("ADFGHK", p));
-// }

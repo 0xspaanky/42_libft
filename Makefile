@@ -9,7 +9,7 @@ ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr
 ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c\
 ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-BSRC = ft_lstsize.c ft_lstadd_front.c ft_lstnew.c\
+BSRC = ft_lstsize.c ft_lstadd_front.c ft_lstnew.c ft_lstlast.c ft_lstadd_back.c\
 
 OBJ = $(SRC:.c=.o)
 RM = rm -f
@@ -24,6 +24,12 @@ $(NAME): $(OBJ)
 $(OBJ): $(SRC)
 	$(CC) $(CFLAGS) -c $(SRC)
 
+bonus: $(BOBJ)
+	ar -rc $(NAME) $(BOBJ)
+
+$(BOBJ): $(BSRC)
+	$(CC) $(CFLAGS) -c $(BSRC)
+
 clean:
 	$(RM) $(OBJ) $(BOBJ)
 
@@ -32,8 +38,3 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(BOBJ)
-	ar -rc $(NAME) $(BOBJ)
-
-$(BOBJ): $(BSRC)
-	$(CC) $(CFLAGS) -c $(BSRC)

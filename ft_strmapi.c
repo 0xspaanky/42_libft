@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*p;
 	size_t			len_s;
 
+	if (!s || !f)
+		return (NULL);
 	len_s = ft_strlen(s);
 	if (!s)
 		return (NULL);

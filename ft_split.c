@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 04:05:42 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/27 05:03:36 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/29 15:24:49 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,8 @@ char	**ft_split(char const *s, char c)
 
 	j = 0;
 	index = 0;
+	if (!s)
+		return (NULL);
 	string = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!string)
 		return (NULL);

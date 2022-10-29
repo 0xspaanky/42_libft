@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 02:25:09 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/29 16:46:58 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/29 17:53:54 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char *ptr;
-	size_t i;
+	char	*ptr;
+	size_t	i;
 
 	i = 0;
 	if (count && size == SIZE_MAX / count)

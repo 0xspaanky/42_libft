@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:35:22 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/29 17:33:24 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/29 17:51:07 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (0);
 	if (start >= ft_strlen(s))
 		return (ft_calloc(1, 1));
-	if(len > ft_strlen(s))
+	if (len > ft_strlen(s))
 		len = ft_strlen(s);
 	p = (char *)malloc(len + 1);
 	if (!p)

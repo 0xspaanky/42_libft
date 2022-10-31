@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 04:05:42 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/29 15:24:49 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/31 05:47:27 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	count_words(char const *s, char c)
 	return (counter);
 }
 
-char	**free_things(char **strings)
+char	**free_strings(char **strings)
 {
 	int	i;
 
@@ -80,7 +80,7 @@ char	**ft_split(char const *s, char c)
 		{
 			string[index++] = ft_substr(s, 0, get_word_len(s, c));
 			if (!string[index - 1])
-				return (free_things(string));
+				return (free_strings(string));
 			s += get_word_len(s, c);
 		}
 	}

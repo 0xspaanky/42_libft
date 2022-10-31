@@ -25,10 +25,10 @@ $(OBJ): $(SRC)
 	$(CC) $(CFLAGS) -c $(SRC)
 
 bonus: $(BOBJ)
-	ar -rc $(NAME) $(BOBJ)
 
 $(BOBJ): $(BSRC)
 	$(CC) $(CFLAGS) -c $(BSRC)
+	ar -rc $(NAME) $(BOBJ)
 
 clean:
 	$(RM) $(OBJ) $(BOBJ)

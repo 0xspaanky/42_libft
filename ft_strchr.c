@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 23:55:27 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/27 04:37:50 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/31 05:55:07 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*p;
-	size_t	i;
-	char	c_casted;
+	int	i;
 
 	i = 0;
-	p = (char *)s;
-	c_casted = (char)c;
-	if (p[i] != c_casted)
-		i++;
-	while (i < ft_strlen(s) + 1)
+	while (s[i])
 	{
-		if (p[i] == c_casted)
-			return (p + i);
+		if (s[i] == (char)c)
+			return ((char *)s + i);
 		i++;
 	}
+	if (((char *)s)[i] == (char)c)
+		return ((char *)s + i);
 	return (0);
 }

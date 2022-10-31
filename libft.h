@@ -6,7 +6,7 @@
 /*   By: smounafi <smounafi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:20:11 by smounafi          #+#    #+#             */
-/*   Updated: 2022/10/27 23:08:05 by smounafi         ###   ########.fr       */
+/*   Updated: 2022/10/31 05:30:52 by smounafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
 
 int					ft_isalpha(int c);
 int					ft_isalnum(int c);
